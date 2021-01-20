@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <style>
+        .item{
+            border:1px solid orange;
+        }
+        .owl-prev{
+            position:absolute;
+            top:10px;
+            left:-5px;
+        }
+        .owl-next{
+            position:absolute;
+            top:50px;
+            right:5px;
+            /* padding:5px; */
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.jpg" width=300px height=100px alt="logo">
+                </a>
+            </div>
+            <div class="search">
+                <input type="search" name="s" placeholder="search site..">
+                <input type="submit" value=">">
+            </div>
+            <div class="clearfix"></div>
+        </header>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="image1.jpg" alt="First image" width="400" height="200">
+            </div>
+            <div class="item">
+                <img src="image2.jpg" alt="second image" width="400" height="200">
+            </div>
+            <div class="item">
+        <img src="image3.jpg" alt="third image" width="400" height="200">
+            </div>
+            <div class="item">
+                <img src="image4.jpg" alt="four image" width="400" height="200">
+            </div>
+            <div class="item">
+                <img src="image5.jpg" alt="Fidth image" width="400" height="200">
+            </div>
+             <!--<div class="item"><h4>6</h4></div>
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+            <div class="item"><h4>10</h4></div>
+            <div class="item"><h4>11</h4></div>
+            <div class="item"><h4>12</h4></div> -->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script>
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items:4,
+                nav:true,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true
+            });
+        </script>
+        <footer class="main-footer">
+            <div class="footer-box">
+                <h3>Footer</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <address>
+                    <h3>Company</h3>
+                    <p>#418, Telangana, India</p>
+                    <p>Email:<a href="mailto:nelapatlasrilehareddy@gmail.com">nelapatlasrilekhareddy@gmail.com</a></p>
+                    <p>Ph:<a href="tel:9876543219">9876543219</a></p>
+                </address>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <div class="copy">
+            <p><small>Copyright &copy; 2020.All rights Reserved.</small></p>
+        </div>
+    </div>
+</body>
